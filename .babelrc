@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "IE 11"]
+        },
+        "modules": false,
+        "useBuiltIns": true
+      }
+    ]
+  ],
+  "plugins": ["transform-runtime", "transform-object-rest-spread"],
+  "comments": false,
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
+}
